@@ -1,12 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>File data:</strong>
-  <%= image_tag(@photo.file_data).image_url %>
-</p>
 
 <% @photo.files.each do |file|  %>
-  <%= link_to file.filename, file %>
+  <%= image_tag file %>
 <% end %>
 
 <%= link_to 'Edit', edit_photo_path(@photo) %> |
