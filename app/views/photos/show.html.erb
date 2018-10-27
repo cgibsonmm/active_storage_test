@@ -2,7 +2,7 @@
 
 <p>
   <strong>File data:</strong>
-  <%= @photo.file_data %>
+  <%= image_tage(@photo.file_data).image_url %>
 </p>
 
 <% @photo.files.each do |file|  %>
